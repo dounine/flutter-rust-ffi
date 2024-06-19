@@ -1,6 +1,10 @@
+use zsign::ZsignBuilder;
+use openssl;
+
 #[flutter_rust_bridge::frb(sync)] // Synchronous mode for simplicity of the demo
 pub fn greet(name: String) -> String {
-    zsign::ZsignBuilder::new();
+    ZsignBuilder::new()
+    .build("","","","","").unwrap();
     format!("Hello, {name}!")
 }
 

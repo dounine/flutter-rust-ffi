@@ -38,7 +38,6 @@ dependencies:
   rust_lib_flutter_rust_ffi:
     path: rust_builder
   flutter_rust_bridge: 2.0.0-dev.40
-  flutter_openssl_crypto: 0.5.0
 
 dev_dependencies:
   flutter_test:
